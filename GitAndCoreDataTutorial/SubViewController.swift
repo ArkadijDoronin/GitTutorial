@@ -10,10 +10,14 @@ import UIKit
 
 class SubViewController: UIViewController {
 
+    @IBOutlet weak var fromMainView: UILabel!
+    
+    var outputText: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        fromMainView.text = outputText
     }
 
     override func didReceiveMemoryWarning() {

@@ -25,6 +25,7 @@
                                 <rect key="frame" x="149.5" y="318.5" width="77" height="30"/>
                                 <state key="normal" title="To subview"/>
                                 <connections>
+                                    <action selector="ToSubView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4q-B8-ERS"/>
                                     <segue destination="oOJ-0k-x8z" kind="show" identifier="subview" id="T0Z-mW-gJ9"/>
                                 </connections>
                             </button>
@@ -52,8 +53,20 @@
                     <view key="view" contentMode="scaleToFill" id="36k-Xu-KbC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-uc-aIy">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="fromMainView" destination="Kh3-uc-aIy" id="Rkz-aR-EwW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gXl-jZ-YkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

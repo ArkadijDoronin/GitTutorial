@@ -10,8 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func ToSubView(_ sender: UIButton) {
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let distination = segue.destination as! SubViewController
+            
+        distination.outputText = "Hallo Arkadij"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+        
         print("Hallo Arkadij!")
     }
 
